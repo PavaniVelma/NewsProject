@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DetailsDescriptionFragment">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/NetworkImageView"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="@dimen/_250dp"/>
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="italic"
+        android:layout_marginHorizontal="@dimen/_8dp"
+        android:text="@string/author"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NetworkImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/movie_name"
+        android:layout_margin="@dimen/_8dp"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginHorizontal="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/description"/>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_marginHorizontal="@dimen/_8dp"
+        android:text="@string/category"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4dp"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:paddingVertical="@dimen/_4dp"
+        android:paddingHorizontal="@dimen/_8dp"
+        android:translationZ="@dimen/_4dp"
+        android:textColor="#95000000"
+        android:background="@drawable/shape_time_background"
+        app:layout_constraintEnd_toEndOf="@id/NetworkImageView"
+        app:layout_constraintBottom_toBottomOf="@id/NetworkImageView"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/time_12_12_12"
+        app:drawableStartCompat="@drawable/baseline_calendar_month_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

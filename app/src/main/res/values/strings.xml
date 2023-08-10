@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NewsProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_news">Popular News</string>
+    <string name="author">author</string>
+    <string name="movie_name">movie name</string>
+    <string name="description">discription</string>
+    <string name="category">category</string>
+    <string name="time_12_12_12">time:12:12:12</string>
+    <string name="Discription">Discription</string>
+    <string name="share">share</string>
+    <string name="search">search</string>
+    <string name="home">HOME</string>
+    <string name="saved">SAVED</string>
+    <string name="account">ACCOUNT</string>
+</resources>

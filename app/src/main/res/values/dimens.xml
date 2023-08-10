@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_250dp">dimension_height</dimen>
+    <dimen name="_8dp">dimen_margin_top</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_60dp">60</dimen>
+    <dimen name="_200dp">200</dimen>
+    <dimen name="_16dp">16</dimen>
+</resources>
